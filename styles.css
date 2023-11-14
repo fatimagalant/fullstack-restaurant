@@ -21,10 +21,22 @@
 }
 
 /*Landing Styles*/
+
+#Landing{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.295)),
+    url("https://i.postimg.cc/cLyYwLhs/edward-howell-vv-Uy1h-WVYEA-unsplash.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 .landing-title{
  font-family: 'Comfortaa', sans-serif;
  font-size: var(--h1-size);
  font-weight: 1000;
+ color: var(--generic-white);
+ display: flex;
+ justify-content: center;
 }
 
 /*Mobile Responsiveness - Media Queries*/
