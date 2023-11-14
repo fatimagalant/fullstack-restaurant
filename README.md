@@ -5,7 +5,7 @@ COMMANDS TO INITIALISE REPOSITORY
 -  git push
 
 **Important to note**
-when working in collaborative groups, make sure to pull the code befoore pushing yours to ensure you have the updated code on your local machine
+when working in collaborative groups, make sure to pull the code before pushing yours to ensure you have the updated code on your local machine
 
 ASSIGNMENTS
 - Baz - footer
