@@ -4,14 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Chèvres</title>
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./styles.css">
+    <!-- AOS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!--Landing Section-->
     <section id="Landing">
-        <h1 class="landing-title">Les Chèvres</h1>
-        <p>This Luxury Eatery Is For The Price Of Living.</p>
+        <h1 class="landing-title" data-aos="fade-right">Les Chèvres</h1>
+        <p class="subtitle" data-aos="fade-right">This Luxury Eatery Is For The Price Of Living.</p>
     </section>
     <!--End of Landing Section-->
+    <!--About Section-->
+    <section id="About">
+        <h2 class="about-title">About</h2>
+    </section>
+    <!--End of About Section-->
+    <!--Menu Section-->
+    <section id="Menu">
+        <h2 class="menu-title">Menu</h2>
+    </section>
+    <!--End of Menu Section-->
+    <!--Reserve Table Section-->
+    <section id="Reserve">
+        <h2 class="reserve-title">Reserve a Table</h2>
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="column">
+            <div class="container">
+                <img class="reserve-image" src="https://i.postimg.cc/fbM9qq1p/igor-rand-wf-M1-Fi-k-Ma-Y-unsplash.jpg" alt="dining area">
+            </div>
+        </div>
+    </section>
+    <!--End of Reserve Table Section-->
+    <!--Contact Section-->
+    <section id="Contact">
+        <h2 class="contact-title">Contact</h2>
+        <div class="container">
+            <div class="column"> contact info/map </div>
+            <div class="column">contact form</div>
+        </div>
+    </section>
+    <!--End of Reserve Table Section-->
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
+<!-- AOS js init -->
+<script>
+    AOS.init();
+  </script>
