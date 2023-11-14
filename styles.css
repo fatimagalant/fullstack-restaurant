@@ -1,0 +1,39 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300&display=swap');
+
+/*Global Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Root Styles*/
+:root{
+    --main-color: #8C271E;
+    --accent-color: #ABA194;
+    --accent-green: #949D6A;
+    --generic-black: #000;
+    --generic-white: #fff;
+    --h1-size: 100px;
+    --h2-size: 50px;
+    --h3-size: 24px;
+}
+
+/*Landing Styles*/
+.landing-title{
+ font-family: 'Comfortaa', sans-serif;
+ font-size: var(--h1-size);
+ font-weight: 1000;
+}
+
+/*Mobile Responsiveness - Media Queries*/
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+}
