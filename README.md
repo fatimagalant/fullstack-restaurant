@@ -11,7 +11,7 @@ when working in collaborative groups, make sure to pull the code before pushing 
 
 ASSIGNMENTS
 - Baz - footer
-- Bulela - Logo
-- Kaelo - Landing
-- Fatima - Landing
+- Bulela - Logo & menu 
+- Kaelo - Landing / contact / forms
+- Fatima - Landing / styling css 
 - Jody - Navbar
