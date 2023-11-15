@@ -45,6 +45,7 @@
         <h2 class="reserve-title">Reserve a Table</h2>
         <div class="column">
             <p>Lorem ipsum dolor sit amet</p>
+            
         </div>
         <div class="column">
             <div class="container">
@@ -59,13 +60,25 @@
         <div class="container">
             <div class="column"> contact info/map </div>
         <div class="column">
-        <form action>
-            <p> We are here to assist you</p>
-             <input type="text" placeholder="Username"> <br>
-             <input type="email" placeholder="Email"><br>
-             <textarea placeholder="Message..." rows="5"></textarea><br>
-            <button type="submit" href="/">Submit</button><br>
-        </form>
+            <form action="">
+                <p> We are here to assist you</p>
+               <div class="clearfix">
+               <input class="col2 first" type="text" placeholder="FirstName">
+               <input class="col2 last" type="text" placeholder="LastName">
+               </div>
+               
+               <div class="clearfix">
+               <input  class="col2 first" type="Email" placeholder="Email">
+               <input class="col2 last" type="text" placeholder="Contact Number">
+               </div>
+               
+               <div class="clearfix">
+               <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+               </div>
+                                           
+               <div class="clearfix"><input type="submit" value="Send">
+               </div>
+               </form>
         </div>
 
         </div>
