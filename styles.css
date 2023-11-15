@@ -21,6 +21,17 @@
     --p-size: 24px;
 }
 
+nav{
+
+    background-color: #aba194;
+}
+
+.logo{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 h1{
     font-size: var(--h1-size);
     font-family: 'Comfortaa', sans-serif;
