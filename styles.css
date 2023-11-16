@@ -111,9 +111,16 @@ background-position: center;
  color: var(--generic-white);
 }
 
-/* .card{
-    background-color: var(--accent-green);
-} */
+.card-deck{
+    background-color: transparent;
+}
+
+.menu-h1{
+padding-top: 20px;    
+display: flex;
+justify-content: center;
+
+}
 
 /*Reserve a Table Styles*/
 #Reserve{
