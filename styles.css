@@ -31,7 +31,6 @@ h2{
     font-size: var(--h2-size);
     font-family: 'Archivo Black', sans-serif;
     display: flex;
-    justify-content: center;
 }
 h3{
     font-size: var(--h3-size);
@@ -82,18 +81,22 @@ p{
     color: var(--generic-black);
 }
  
-
+.about-info{
+    max-width: 900px;
+    display: flex; 
+    justify-content: center;
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    /* background-color: #2196F3; */
-    padding: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
   }
   .grid-item {
-    background-color: rgba(177, 174, 174, 0.308);
+    background-color: var(--accent-color);
     /* border: 1px solid rgba(0, 0, 0, 0.8); */
     padding: 20px;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
   }
 /*Menu Styles*/
@@ -108,9 +111,10 @@ background-position: center;
  color: var(--generic-white);
 }
 
-.card{
-    /* background-color: var(--accent-green); */
-}
+/* .card{
+    background-color: var(--accent-green);
+} */
+
 /*Reserve a Table Styles*/
 #Reserve{
     min-height: 100vh;
