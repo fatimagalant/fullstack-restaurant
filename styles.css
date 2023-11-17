@@ -197,7 +197,20 @@ width: 200px;
 object-fit: contain;
 }
 
-/* -------------------------- */
+/* -----------contact form botton--------------- */
+ .send{
+padding-left: 50px;
+
+ }
+ .col2{
+    border: solid ;
+    border-radius: 10px;
+ }
+ textarea{
+
+    border: solid ;
+    border-radius: 3px;
+ }
 
 
 /*Mobile Responsiveness - Media Queries*/
