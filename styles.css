@@ -36,13 +36,21 @@
 }
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
+
 }footer{
     font-size: 14px;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(221, 169, 169);
-    padding: 50px 0;
-    text-align:center;
-    
+    background-color: rgb(157, 106, 106);
+    padding: 50px 20px;
+    border-style:groove;
+   box-sizing: border-box;
+display: flex;
+}
+
+.footer div{
+ text-align: center;
+ flex: content;
 }
 h3{
     font-family: monospace;
