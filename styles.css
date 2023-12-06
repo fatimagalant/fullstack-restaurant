@@ -37,3 +37,11 @@
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
 }
+
+div, h2, h3, h6, form, label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
