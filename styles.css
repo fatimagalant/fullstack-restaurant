@@ -52,4 +52,20 @@ div, h2, h3, h6, form, label {
   padding: 3em;
   background: rgba(0, 0, 0, 0.78);
   width: 65%;
-  margin: 0 auto;  
+  margin: 0 auto; 
+  
+}
+
+h2.sub-heading-agileits,
+h3.sub-heading-agileits {
+  display: inline-block;
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 0.4em;
+  padding: 0px 25px 10px 0px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #0091cd;
+  font-family: 'Raleway', sans-serif;
