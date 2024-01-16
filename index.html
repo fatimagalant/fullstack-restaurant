@@ -73,13 +73,15 @@
           <br>
           <h5 class="text-center">Browse our top delicious dishes </h5>
           <br>
-          
           <a href="./assets/Date and fennel yoghurt.jfif" download class="d-flex justify-content-center"> 
             <button type="button" class="btn btn-primary btn-sm">Download menu</button>
           </a>
        <br>
           <div class="card-deck">
-              <div class="card">
+            <div class="row">
+              <div id="menuItems"></div>
+            </div>
+              <!-- <div class="card">
                 <img class="card-img-top" src="./assets/salmon-chilli-pesto-penne.webp" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title text-dark"><em>Chilli and salmon penne</em></h5>
@@ -108,10 +110,10 @@
                 <div class="card-footer">
                   <small class="text-success">onions | flour | yeast | water | salt | sugar | oil | mangetout | chicken</small>
                 </div>
-              </div>
+              </div> -->
             </div>
             <br>
-            <div class="card-deck">
+            <!-- <div class="card-deck">
               <div class="card">
                 <img class="card-img-top" src="./assets/Napolitana and spinach penne.jfif" alt="Card image cap">
                 <div class="card-body">
@@ -144,7 +146,7 @@
                   <small class="text-success">soya milk | sugar | date | fennel</small>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           
       </section>
@@ -200,7 +202,7 @@
         </div>
         <div class="column">
             <div class="container">
-                <img class="reserve-image" src="https://i.postimg.cc/fbM9qq1p/igor-rand-wf-M1-Fi-k-Ma-Y-unsplash.jpg" alt="dining area">
+                <img class="reserve-image" src="https://i.postimg.cc/QxGY1xZp/igor-rand-wf-M1-Fi-k-Ma-Y-unsplash.jpg" alt="dining area">
             </div>
         </div>
     </section>
@@ -240,19 +242,24 @@
         </div>
     </section>
     <!--End of Contac Table Section-->
-    <footer id="footer" class="footer">
-        <div class="container">
-        <p><h3><strong>Address:</strong></h3><br> 43 Long Street,Cape Town <br> WC 2579 - SA </p>
-        <p><h3><strong>Reservations:</strong></h3><br> <strong>Phone:</strong>+27 68 090 2166 <br> <strong>Email:</strong>  info@AOS.co.za</p>
-        <p><h3><strong>Operational Hours : </strong></h3><br> <strong>Mon-Sat:</strong>11h00-23h00<br> <strong>Sunday: </strong> Closed </p>
-        <p>
-        </div>
-        </footer>
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
 <!-- AOS js init -->
 <script>
+ (function () {
+   window.mc4wp = window.mc4wp || {
+    listeners: [],
+      forms: {
+        on: function (evt, cb) {
+          window.mc4wp.listeners.push({
+            event: evt,
+             callback: cb,
+          });
+        },
+      },
+    };
+  })();
     AOS.init();
   </script>
