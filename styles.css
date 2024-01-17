@@ -167,32 +167,6 @@ footer{
     text-align:center;
 }
 
-
-
-
-/* More menu styles- Bulela */
-
-.card-deck{
-
-   
-
-    padding: 0 8% 0 ;
-
-}
-
-.card{
-    background-color: transparent;
-    object-fit: cover;
-}
-.card-img-top{
-height: 250px;
-width: 200px;
-object-fit: contain;
-}
-
-/* -------------------------- */
-
-
 /*Mobile Responsiveness - Media Queries*/
 @media only screen and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
@@ -214,7 +188,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    scroll-behavior: smooth;
 }
 nav ul li{
     display: inline-block;
