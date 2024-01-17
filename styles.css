@@ -39,6 +39,7 @@ h3{
 h6{
     font-family: 'Comfortaa', sans-serif;
     font-size: var(--h6-size);
+}
     
 #About{
     min-height: 100vh;
@@ -185,7 +186,7 @@ nav ul li a:active{
 /*Menu Styles*/
 #Menu{
 min-height: 100vh;
-background: linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.438)),
+background: linear-gradient(rgba(0, 0, 0, 0.636), rgba(0, 0, 0, 0.63)),
 url("https://i.postimg.cc/63FjHB2x/edward-howell-R8-Ho-Xig87p8-unsplash.jpg");
 background-position: center;
  background-repeat: no-repeat;
@@ -267,7 +268,6 @@ footer{
 	/*Small smartphones [325px -> 425px]*/
 }
 
-}
 .dark {
     background-color: #222;
     color: #fff;
