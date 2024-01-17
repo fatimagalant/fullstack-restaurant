@@ -13,17 +13,32 @@
     <!-- AOS link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body id="bg" class="light" value="0" name="body">
 <!--Navbar Section-->
-<nav>
-    <ul>
-        <li><a href="#Landing">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Menu">Menu</a></li>
-        <li><a href="#Contact">Contact</a></li>
-        <li><a href="#Reserve"><button class="reserve-table">Reserve A Table</button></a></li>
-    </ul>
+
+    
+
+<script src="navbar.js"></script>
+<nav class="menu">
+    <div name="landMenu">
+        <div>
+            <ul>
+            <li><a class="navLinks" href="#Landing">Home</a></li>
+            <li><a class="navLinks" href="#About">About</a></li>
+            <li><button><a class="navLinks" href="#Reservation">Reservation</a></button></li>
+            <li><a class="navLinks" href="#Contact">Contact</a></li> 
+            <!-- <div name="darkMode"> -->
+                <button type="button" id="darkMode" title="myDark" class="myDark" onclick="darkMode()">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="darkicon" width="16" viewBox="0 0 512 512"><path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+                </button> 
+                
+                <label id="darkLbl" for="myDark">Dark</label>
+            <!-- </div> -->
+            </ul>
+        </div>
+    </div>
 </nav>
+
     <!--Landing Section-->
     <section id="Landing">
         <h1 class="landing-title" data-aos="fade-right">Les Chèvres</h1>
