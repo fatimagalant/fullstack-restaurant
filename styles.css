@@ -30,7 +30,7 @@ h1{
 h2{
     font-size: var(--h2-size);
     font-family: 'Archivo Black', sans-serif;
-    display: flex;
+    /* display: flex; */
 }
 h3{
     font-size: var(--h3-size);
@@ -41,9 +41,8 @@ h6{
     font-size: var(--h6-size);
 }
 p{
-    font-size:var(--p-size);
     font-family: 'Poppins', sans-serif;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
 }
 /*Landing Styles*/
@@ -76,17 +75,44 @@ p{
 
 /*About Styles*/
 #About{
+    padding: 3% 0 5% 0;
     min-height: 100vh;
-    background-color: var(--main-color);
     color: var(--generic-black);
 }
+
+.about-title{
+    text-align: center;
+}
+#about-body{
+    padding: 0 5% 0 5%;
+    text-align: center;
  
+}
+/* testimonials */
+#testimonial-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#testimonial-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#testimonial-text {
+    margin-top: 20px;
+}
+
+
+
 .about-info{
-    max-width: 900px;
+    text-align: center;
     display: flex; 
-    justify-content: center;
+    align-items: center;
 }
 .grid-container {
+    
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 20px;
@@ -96,9 +122,18 @@ p{
     background-color: var(--accent-color);
     /* border: 1px solid rgba(0, 0, 0, 0.8); */
     padding: 20px;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
   }
+
+  .grid-image{
+    object-fit: cover;
+    border: solid 0px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+
 /*Menu Styles*/
 #Menu{
 min-height: 100vh;
@@ -259,3 +294,4 @@ nav ul li a::after{
     width: 100%;
 }
 
+/* new about styles */
