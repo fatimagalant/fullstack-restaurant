@@ -6,6 +6,8 @@
     <title>Les Chèvres</title>
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./styles.css">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Fontawesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS link -->
@@ -28,36 +30,34 @@
         <p class="subtitle" data-aos="fade-right"><i>This Luxury Eatery Is For The Price Of Living.</i></p>
     </section>
     <!--End of Landing Section-->
+
     <!--About Section-->
     <section id="About">
-        <h2 class="about-title">About</h2>
-        <div class="about-info">
-            <p>Our fine dining restaurant cater to exquisite palettes, whether it is the colours of our menu items or the colours of our staff uniforms. 
-                It is not just attire that sets our restaurants apart from others; the dishes served in them are carefully selected, often with a focus on international flavors. </p>
-                <br>
-                <p>With dishes like turbot cooked in red wine, filet mignon cooked over charcoal, and rack of lamb served with figs, there is certainly something for everyone at our establishments.
-                    While each cuisine has its own unique flavors and aesthetics, choosing a fine dining restaurant can provide you with unforgettable culinary experiences. 
-                    So if you're looking for a special meal that will standalone from all the others, consider trying out one of our exclusive eateries.</p>
+      <h2 class="about-title text-center py-3" >About Us</h2>
+      <div id="about-body" class="about-info text-center">
+          <p class="about-text">Our fine dining restaurant cater to exquisite palettes, whether it is the colours of our menu items or the colours of our staff uniforms. 
+              It is not just attire that sets our restaurants apart from others; the dishes served in them are carefully selected, often with a focus on international flavors. 
+              <br><br>
+              With dishes like turbot cooked in red wine, filet mignon cooked over charcoal, and rack of lamb served with figs, there is certainly something for everyone at our establishments.
+                  While each cuisine has its own unique flavors and aesthetics, choosing a fine dining restaurant can provide you with unforgettable culinary experiences. 
+                  So if you're looking for a special meal that will standalone from all the others, consider trying out one of our exclusive eateries.
+                </p>
+              </div>
+              <br>
+                  <h3 class="text-center">Testimonials</h3>
+
+                  <div id="slideshow-container ">
+                    <img id="slideshow-image" src="" alt="">
                 </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h6>Mary J.</h6>
-                        <p><q>I had the pleasure of dining at Les Chèvres recently and I was thoroughly impressed. The prices were great and the food was delectable. The service was wonderful and the menu was accurate. I felt that my money was well spent and I would definitely recommend this fine dining restaurant to anyone looking for a great experience.</q></p>
-                        <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h6>John Doe</h6>
-                        <p><q>I recently had the pleasure of dining at Les Chèvres and I must say that it was an amazing experience. The amicable service made me feel welcomed and the comfortable seating was a great touch. The ambiance was also perfect for a fine dining experience. I highly recommend Les Chèvres to anyone looking for a great night out.</q></p>
-                        <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h6>Clara</h6>
-                        <p><q>I had the pleasure of dining at Les Chèvres recently and it was an amazing experience. The staff were incredibly friendly and attentive, and the wait times were surprisingly quick. The reservations process was also smooth and straightforward. But the best part was the food - it was absolutely brilliant! I would highly recommend Les Chèvres to anyone looking for a great fine dining experience.</q></p>
-                        <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star-half"></i>
-                    </div>  
-                  </div>
-    </section>
-    <!--End of About Section-->
+                <div class="testimonial d-flex justify-content-center">
+                <div id="testimonial-container">
+                  <img id="testimonial-image" src="./assets/John Doe.jpg" alt="">
+                  <h3 id="testimonial-name"></h3>
+                  <p id="testimonial-text"></p>
+              </div>
+                </div>
+  </section>
+  <!--End of About Section-->
 
          <!--Menu Section-->
          <section id="Menu">
@@ -242,8 +242,12 @@
         <p>
         </div>
         </footer>
+        <!-- bootstrap js  -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 <!-- AOS js init -->
