@@ -50,6 +50,7 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
     function showItems(menuItems) {
         document.querySelector("#menuItems").innerHTML=""; 
         menuItems.forEach((menuItem, _i) => {
+        // menuItems.forEach((menuItem, i) => {
             document.querySelector("#menuItems").innerHTML += `
             <div class="card">
             <img class="card-img-top" src=${menuItem.image} alt="Card image cap">
