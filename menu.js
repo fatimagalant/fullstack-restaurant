@@ -14,7 +14,7 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
             image: "https://i.postimg.cc/PJ3Y1t6q/Lamb-and-aubergine-skewers.png",
             description: "Bamboo skewers loaded with minced lamb and fried aubergine",
             ingredients: "lamb, aubergine",
-            price: "R 90.78"
+            price: "R 87.25"
     
         },
         {
@@ -22,7 +22,7 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
             image: "https://i.postimg.cc/LXVz6kLL/Mangetout-and-chicken-kebab.jpg",
             description: "Skewer-cooked fresh mangetout and corn-fed chicken served in warm pitta pockets.",
             ingredients: "onions, flour, yeast, water, salt, sugar, oil, mangetout, chicken",
-            price: "R 90.78"
+            price: "R 60.75"
     
         },
         {
@@ -30,7 +30,7 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
             image: "https://i.postimg.cc/hGTLNRGC/Napolitana-and-spinach-penne.jpg",
             description: "Fresh egg tubular pasta in a sauce made from napolitana and baby spinach.",
             ingredients: "tomato, onion, garlic, pasta, oregano, black pepper, napolitana, spinach",
-            price: "R 90.78"
+            price: "R 70"
     
         },
         {
@@ -38,7 +38,7 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
             image: "https://i.postimg.cc/x1WGs19J/Turkey-and-orange-salad.jpg",
             description: "Free-range turkey and naval orange served on a bed of lettuce",
             ingredients: "lettuce, turkey, orange",
-            price: "R 90.78"
+            price: "R 63.30"
     
         },
         {
@@ -46,7 +46,7 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
             image: "https://i.postimg.cc/sgz8dfnV/Date-and-fennel-yoghurt.jpg",
             description: "A rich yoghurt made with moist date and fresh fennel",
             ingredients: "soya milk, sugar, date, fennel",
-            price: "R 90.78"
+            price: "R 51.90"
     
         },
     ];
@@ -55,10 +55,9 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
 
     function showItems(menuItems) {
         document.querySelector("#menuItems").innerHTML=""; 
-        menuItems.forEach((menuItem, _i) => {
-        // menuItems.forEach((menuItem, i) => {
+        menuItems.forEach((menuItem, i) => {
             document.querySelector("#menuItems").innerHTML += `
-            <div class="col align-items-center">
+            <div id="card-grid" class="col-3 align-items-center">
             <div class="card"  style="width: 18rem;">
             <img class="card-img-top" src=${menuItem.image} alt="Card image cap">
             <div class="card-body">

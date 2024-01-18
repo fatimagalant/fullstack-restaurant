@@ -195,9 +195,8 @@ background-position: center;
  color: var(--generic-white);
 }
 
-/* .card{
-    background-color: var(--accent-green);
-} */
+.card-css{
+}
 
 /*Reserve a Table Styles*/
 #Reserve{
