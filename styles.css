@@ -31,7 +31,7 @@ h1{
 h2{
     font-size: var(--h2-size);
     font-family: 'Archivo Black', sans-serif;
-    display: flex;
+    /* display: flex; */
 }
 h3{
     font-size: var(--h3-size);
@@ -43,9 +43,8 @@ h6{
 }
 
 p{
-    font-size:var(--p-size);
     font-family: 'Poppins', sans-serif;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
 }
 /* Nav Styles */
@@ -143,8 +142,9 @@ nav ul li a:active{
     color: var(--generic-black);
     background-color: var(--accent-color);
 }
-
+ 
 .about-title{
+    font-family: 'Comfortaa', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -154,26 +154,40 @@ nav ul li a:active{
     text-align: center;
  
 }
+ 
 /* testimonials */
+#typed-text{
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 3px 7px#000;
+}
+ 
 #testimonial-container {
-    max-width: 400px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
-
+ 
 #testimonial-image {
     object-fit: cover;
     width: 150px;
     height: 150px;
     border-radius: 50%;
+   
 }
-
+ 
+#testimonial-name {
+    font-family: 'Comfortaa', sans-serif;
+    text-shadow: 3px 3px 7px#000;
+ 
+}
+ 
 #testimonial-text {
     margin-top: 20px;
 }
-
-
 .grid-container {
+    
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 20px;
@@ -183,29 +197,59 @@ nav ul li a:active{
     /* background-color: var(--accent-color); */
     /* border: 1px solid rgba(0, 0, 0, 0.8); */
     padding: 20px;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
   }
+
+  .grid-image{
+    object-fit: cover;
+    border: solid 0px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+
 /*Menu Styles*/
 #Menu{
 min-height: 100vh;
-background: linear-gradient(rgba(0, 0, 0, 0.636), rgba(0, 0, 0, 0.63)),
-url("https://i.postimg.cc/63FjHB2x/edward-howell-R8-Ho-Xig87p8-unsplash.jpg");
+background: linear-gradient(to top,var(--accent-color), #ffffff);
+
+ /* background: linear-gradient rgba(0, 0, 0, 0.636), rgba(0, 0, 0, 0.63);
 background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
  background-attachment: fixed;  
- color: var(--generic-white);
+ color: var(--generic-white); */
 }
 
-/* .card-css{
-} */
+#menuItems{
+    /* padding: 0 5% 0 5%; */
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+}
+#menuImage{
+    height: 240px;
+}
+.card{
+    height: 360px;
+}
 
-/*Reserve a Table Styles*/
+.card-deck{
+    background-color: transparent;
+}
+
+.menu-h1{
+padding-top: 20px;    
+display: flex;
+justify-content: center;
+
+}
+
 #Reserve{
     min-height: 100vh;
-    background-color: var(--accent-color);
-    color: var(--generic-black);
+    background-image: url(/dinning.jpg)
 }
 .column{
     width: 50%;
@@ -221,16 +265,377 @@ display: flex;
 justify-content: center;
 }
 .reserve-image{
-    width: 700px;
+width: 700px;
 height: 500px;
 filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.63));
 border-radius: 10% 0% 10% 0%;
-transition: all .2s ease-in-out; 
-}
-.reserve-image:hover{
-    transform: scale(1.1); 
+transition: all .2s ease-in-out;
 }
 
+.reserve-image:hover{
+    transform: scale(1.1);
+}
+ 
+/*Contact Styles*/
+#Contact{
+min-height: 100vh;
+background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.521)),
+url("https://i.postimg.cc/pLfjZMcK/klara-kulikova-yj-QDn-Oh-GE34-unsplash.jpg");
+background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;  
+ 
+ /* background-color: var(--generic-black); */
+ color: var(--generic-white);
+}
+/* Mobile Responsiveness - Media Queries */
+/* @media only screen and (max-width: 1200px){ */
+    /*Tablets [601px -> 1200px]*/
+    /* h1{
+        font-size: 75px;
+    }
+} */
+/* @media only screen and (max-width: 600px){ */
+  /*Big smartphones [426px -> 600px]*/
+    /* h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 425px){ */
+  /*Small smartphones [325px -> 425px]*/
+/* }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: brown;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}nav ul li a:hover::after{
+    width: 100%;
+}
+  */
+div, h2, h3, h6, form, label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  .booking-form-w3layouts {
+    box-sizing: border-box;
+    padding: 3em;
+    background: rgba(0, 0, 0, 0.78);
+    width: 65%;
+    margin: 0 auto;
+  }
+  h2.reserve-title {
+   text-align: center;
+   font-size: 30px;
+   color: #fff;
+   text-transform: capitalize;
+   margin-bottom: 0.4em;
+   padding: 0px 25px 10px 0px;
+   font-weight: 400;
+   letter-spacing: 2px;
+ 
+   
+  }
+ 
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    display: inline-block;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 0.4em;
+    padding: 0px 25px 10px 0px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #0091cd;
+    font-family: 'Raleway', sans-serif;
+  }
+ 
+  .booking-form-w3layouts input[type="text"],
+  .booking-form-w3layouts input[type="email"],
+  .booking-form-w3layouts textarea,
+  select.form-control,
+  input#datepicker {
+    width: 100%;
+    font-weight: 300;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    padding: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+ 
+  .booking-form-w3layouts textarea {
+    resize: none;
+    height: 80px;
+  }
+ 
+  .field-agileinfo-spc {
+    margin-bottom: 1em;
+  }
+ 
+  .form-w3-agile-text {
+    width: 100%;
+  }
+ 
+  select.form-control option {
+    background: #000;
+  }
+ 
+  .booking-form-w3layouts input[type="submit"],
+  .booking-form-w3layouts input[type="reset"] {
+    text-transform: capitalize;
+    background: #0091cd;
+    color: #fff;
+    padding: 0.5em 4em;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 1em;
+    float: left;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+     
+    }
+  .booking-form-w3layouts input[type="submit"] {
+    margin-right: 1.5em;
+    background: #d2741c;
+  }
+ 
+  .booking-form-w3layouts input[type="submit"]:hover {
+    background: #0091cd;
+    color: #fff;
+  }
+ 
+  .booking-form-w3layouts input[type="reset"]:hover {
+    background: #d2741c;
+    color: #fff;
+  }
+ 
+  .booking-form-w3layouts ::-webkit-input-placeholder {
+    color: #fff;
+  }
+ 
+  .booking-form-w3layouts :-moz-placeholder {
+    color: #fff;
+  }
+ 
+  .booking-form-w3layouts ::-moz-placeholder {
+    color: #fff;
+  }
+ 
+  .booking-form-w3layouts :-ms-input-placeholder {
+    color: #fff;
+  }
+  .booking-form-w3layouts label {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.83);
+    letter-spacing: 2px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+ 
+  @media (max-width: 1440px) {
+    .booking-form-w3layouts {
+      width: 73%;
+    }
+   }
+ 
+  @media (max-width: 1366px) {
+    .booking-form-w3layouts {
+      width: 75%;
+    }
+  }
+  @media (max-width: 1280px) {
+    .booking-form-w3layouts {
+      width: 80%;
+    }
+  }
+  @media (max-width: 1080px) {
+    .booking-form-w3layouts {
+      width: 83%;
+      padding: 2em 2.2em;
+    }
+  }
+  @media (max-width: 1024px) {
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+      font-size: 22px;
+      padding: 0px 20px 7px 0px;
+    }
+    .field-agileinfo-spc {
+      margin-bottom: 0.8em;
+    }
+   
+    .booking-form-w3layouts input[type="submit"],
+    .booking-form-w3layouts input[type="reset"] {
+      padding: 0.5em 3em;
+      font-size: 1.1em;
+    }
+  }
+  @media (max-width: 768px) {
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+      font-size: 21px;
+      padding: 0px 15px 7px 0px;
+    }
+    .radio-section h6 {
+      font-size: 17px;
+      letter-spacing: 1.5px;
+    }
+    ul.radio-buttons-w3-agileits li {
+      margin: 0em 1em;
+    }
+  }
+ 
+  @media (max-width: 667px) {
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+      font-size: 19px;
+      letter-spacing: 1.5px;
+    }
+    .booking-form-w3layouts {
+      width: 86%;
+      padding: 2em 2em;
+    }
+    .booking-form-w3layouts input[type="text"],
+    .booking-form-w3layouts input[type="email"],
+    .booking-form-w3layouts textarea,
+    select.form-control,
+    input#datepicker {
+      padding: 8px 10px;
+    }
+    .field-agileinfo-spc {
+      margin-bottom: 0.9em;
+    }
+   
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+      margin-bottom: 0.6em;
+    }
+  }
+  @media (max-width: 640px) {
+    .booking-form-w3layouts input[type="submit"] {
+      margin-right: 0.7em;
+    }
+  }
+ 
+  @media (max-width: 600px) {
+    .booking-form-w3layouts {
+      width: 90%;
+    }
+   
+    .booking-form-w3layouts input[type="submit"],
+    .booking-form-w3layouts input[type="reset"] {
+      padding: 0.5em 2em;
+    }
+  }
+  @media (min-width: 481px) {
+    .main-flex-w3ls-sectns {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+    }
+    .form-w3-agile-text1,
+    .form-w3-agile-text2 {
+      flex-basis: 48.5%;
+      -webkit-flex-basis: 48.5%;
+    }
+  }
+ 
+  @media (min-width: 737px) {
+    .triple-wthree {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+    }
+    .form-w3-agile-text11,
+    .form-w3-agile-text22,
+    .form-w3-agile-text33 {
+      flex-basis: 32%;
+      -webkit-flex-basis: 32%;
+    }
+  }
+  .booking-form-w3layouts {
+      width: 85%;
+  }
+  .booking-form-w3layouts input[type="submit"],
+    .booking-form-w3layouts input[type="reset"] {
+      font-size: 1em;
+    }
+    .booking-form-w3layouts textarea {
+      height: 60px;
+    }
+  @media (max-width: 414px) {
+    .booking-form-w3layouts {
+      width: 90%;
+    }
+    .booking-form-w3layouts {
+      width: 90%;
+      padding: 1.5em 1.7em;
+    }
+  }
+ 
+  @media (max-width: 384px) {
+    .booking-form-w3layouts input[type="submit"],
+    .booking-form-w3layouts input[type="reset"] {
+      float: none;
+    }
+    .booking-form-w3layouts input[type="submit"] {
+      margin-right: 0em;
+    }
+  }
+  @media (max-width: 320px) {
+    .booking-form-w3layouts {
+      width: 93%;
+      padding: 1.3em 1.5em;
+    }
+    h2.sub-heading-agileits,
+    h3.sub-heading-agileits {
+      font-size: 18px;
+      letter-spacing: 1.4px;
+      padding: 0px 12px 5px 0px;
+    }
+  }
+ /*End of Reserve Table Section*/
 /*Contact Styles*/
 #Contact{
 min-height: 100vh;
@@ -245,41 +650,110 @@ background-position: center;
  color: var(--generic-white);
 }
 
-body{
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
+
+
+.contact{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+
+}
+
+ .contact-form {
+ max-width: 400px;
+ width: 100%;
+ padding: 20px;
+ background-color: #fff;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ border-radius: 8px;
+ text-align: center;
+}
+
+.title {
+ text-align: center;
+ color: #333;
+ font-size: 1.5em;
+ margin-bottom: 10px;
+}
+
+.subtitle {
+ text-align: center;
+ color: #555;
+ font-size: 1.2em;
+ margin-bottom: 20px;
+}
+
+form {
+ display:left;
+ flex-direction: column;
+}
+
+input,
+textarea {
+ margin-bottom: 15px;
+ padding: 10px;
+ width: 100%;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+
+button {
+ background-color: #d2741d;
+ color: white;
+ padding: 10px 15px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+button:hover {
+ background-color: #0091cd;
+}
+
+
+/* ----------------------- */
+
+/* Footer styles */
+
+footer{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
 }
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
-.container{
-    max-width: 1170px;
-    margin:auto;
+.containr{
+  max-width: 1170px;
+  margin:auto;
 }
 .row{
-    display:flex;
-    flex-wrap: wrap;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 ul{
-    list-style: none;
+  list-style: none;
 }
 .footer{
-    background-color: #24262b;
-    padding: 70px 0;
+  background-color: #24262b;
+  padding: 70px 0;
 }
 .footer-col{
-width: 25%;
+width: 25% !important;
 padding: 0 15px;
 }
+
 .footer-col h4{
-    font-size: 18px;
-    color:#ffffff;
-    text-transform:  capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
+  font-size: 18px;
+  color:#ffffff;
+  text-transform:  capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
 .footer-col h4::before{
 content: '';
@@ -292,16 +766,16 @@ box-sizing: border-box;
 width: 50px; 
 }
 .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .footer-col ul li a{
-    font-size: 10px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color:#bbbbbb;
-    display:block;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color:#bbbbbb;
+  display:block;
 transition: all 0.6s ease;
 }
 .footer-col ul li a:hover{
@@ -321,28 +795,53 @@ color: #ffffff;
 transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
+  color: #24262b;
+  background-color: #ffffff;
 }
 
 /*responsive*/
 @media(max-width: 767px){
-    footer-col {
-        width: 50%;
+  footer-col {
+      width: 50%;
 margin-bottom: 30px;
- }
+}
 }
 @media(max-width: 574px){
-    footer-col {
-        width: 100%;
- }
+  footer-col {
+      width: 100%;
+}
 }
 .footer-col h5{
-    color: beige ;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    padding-bottom: 10px;
-} 
+  color: beige ;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 10px;
+}
+
+
+
+.card-img-top{
+height: 250px;
+width: 200px;
+object-fit: contain;
+}
+
+/* -----------contact form botton--------------- */
+ .send{
+padding-left: 50px;
+
+ }
+ .col2{
+    border: solid ;
+    border-radius: 10px;
+ }
+ textarea{
+
+    border: solid ;
+    border-radius: 3px;
+ }
+
+
 /*Mobile Responsiveness - Media Queries*/
 @media only screen and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
@@ -360,7 +859,4 @@ margin-bottom: 30px;
 	/*Small smartphones [325px -> 425px]*/
 }
 
-.dark {
-    background-color: #222;
-    color: #fff;
-}
+/* new about styles */

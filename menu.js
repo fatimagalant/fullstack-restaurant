@@ -49,6 +49,23 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
             price: "R 51.90"
     
         },
+        {
+            name: "Ratatouille",
+            image: "./assets/BFV13909BakedRatatouille.jpg",
+            description: "A classic Provençal vegetable stew bursting with flavor from eggplant, zucchini, tomatoes, bell peppers, and herbs.",
+            ingredients: "tomatoes, eggplant, zucchini, bell peppers, onion, garlic, olive oil, herbs",
+            price: "R 72.50"
+          },
+          {
+            name: "Croque Monsieur",
+            image: "./assets/Croque Monsieur.jpg",
+            description: "A decadent ham and cheese sandwich on toasted sourdough bread, topped with béchamel sauce and melted Gruyère cheese.",
+            ingredients: "sourdough bread, ham, Gruyère cheese, béchamel sauce, butter",
+            price: "R 58.00"
+          }
+          
+          
+          
     ];
     
     console.log(menuItems); 
@@ -57,9 +74,8 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
         document.querySelector("#menuItems").innerHTML=""; 
         menuItems.forEach((menuItem, i) => {
             document.querySelector("#menuItems").innerHTML += `
-<div class="grid">
- <div class="card"  style="width: 18rem;">
-    <img class="card-img-top" src=${menuItem.image} alt="Card image cap">
+ <div class="card d-flex align-items-stretch my-4 mx-4"  style="width: 18rem;">
+    <img  id="menuImage" class="card-img-top"  src=${menuItem.image} alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title text-dark"><em>${menuItem.name}</em></h5>
     <p class="card-text text-dark">${menuItem.description}</p>
@@ -68,7 +84,6 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
     <small class="text-success">${menuItem.ingredients}</small>
     <large class="text-black">${menuItem.price}</large>
    </div>
-  </div>
  </div>
 </div>
           

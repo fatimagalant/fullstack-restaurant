@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,41 +37,54 @@
     </section>
     <!--End of Landing Section-->
 
-    <!--About Section-->
-    <section id="About">
-      <h2 class="about-title text-center py-3" >About Us</h2>
-      <div id="about-body" class="about-info text-center">
-          <p class="about-text">Our fine dining restaurant cater to exquisite palettes, whether it is the colours of our menu items or the colours of our staff uniforms. 
-              It is not just attire that sets our restaurants apart from others; the dishes served in them are carefully selected, often with a focus on international flavors. 
-              <br><br>
-              With dishes like turbot cooked in red wine, filet mignon cooked over charcoal, and rack of lamb served with figs, there is certainly something for everyone at our establishments.
-                  While each cuisine has its own unique flavors and aesthetics, choosing a fine dining restaurant can provide you with unforgettable culinary experiences. 
-                  So if you're looking for a special meal that will standalone from all the others, consider trying out one of our exclusive eateries.
-                </p>
-              </div>
-              <br>
-                  <h3 class="text-center">Testimonials</h3>
+<!--About Section-->
+<section id="About">
+  <h2 class="about-title text-center py-3 text-white" >About Us</h2>
+  <div id="about-body" class="about-info text-center">
+      <p class="about-text">Our fine dining restaurant cater to exquisite palettes, whether it is the colours of our menu items or the colours of our staff uniforms.
+          It is not just attire that sets our restaurants apart from others; the dishes served in them are carefully selected, often with a focus on international flavors.
+          <br><br>
+          With dishes like turbot cooked in red wine, filet mignon cooked over charcoal, and rack of lamb served with figs, there is certainly something for everyone at our establishments.
+              While each cuisine has its own unique flavors and aesthetics, choosing a fine dining restaurant can provide you with unforgettable culinary experiences.
+              So if you're looking for a special meal that will standalone from all the others, consider trying out one of our exclusive eateries.
+            </p>
 
-                  <div id="slideshow-container ">
-                    <img id="slideshow-image" src="" alt="">
-                </div>
-                <div class="testimonial d-flex justify-content-center">
-                <div id="testimonial-container">
-                  <img id="testimonial-image" src="./assets/John Doe.jpg" alt="">
-                  <h3 id="testimonial-name"></h3>
-                  <p id="testimonial-text"></p>
-              </div>
-                </div>
-  </section>
-  <!--End of About Section-->
+              <br><h6 class="text-center text-warning about-title">Serving  : </h6>
 
+             <div class="d-flex justify-content-center">
+              <h3 class="about-title text-center py-3 text-secondary" >Breakfast </h3>
+              <h3 class="about-title text-center py-3 px-5 text-secondary" >Lunch </h3>
+              <h3 class="about-title text-center py-3 text-secondary" >Diner</h3>
+             </div>
+
+
+          </div>
+          <br>
+          <hr>
+          <br>
+          <i> <h4 id="typed-text" class="text-center text-white"></h4></i>
+
+              <div id="slideshow-container ">
+                <img id="slideshow-image" src="" alt="">
+            </div>
+            <div class="testimonial d-flex justify-content-center">
+            <div id="testimonial-container">
+              <img id="testimonial-image" src="./assets/John Doe.jpg" alt=""><br><br>
+              <h5 id="testimonial-name" class="text-white"></h5>
+              <i><p id="testimonial-text"></p></i>
+          </div>
+            </div>
+</section>
+<!--End of About Section-->
          <!--Menu Section-->
          <section id="Menu">
-          <h2 class="menu-title text-center">Menu</h2>
+          <h2 class="menu-h1">Menu</h2>
+          <!-- <h2 class="menu-title text-center">Menu</h2> -->
           <br>
           <h5 class="text-center">Browse our top delicious dishes </h5>
           <br>
-          <a href="https://i.postimg.cc/sgz8dfnV/Date-and-fennel-yoghurt.jpg" download class="d-flex justify-content-center"> 
+          
+          <a href="./assets/Les Chèvres Food Menu.png" download class="d-flex justify-content-center"> 
             <button type="button" class="btn btn-primary btn-sm">Download menu</button>
           </a>
        <br>
@@ -151,141 +164,204 @@
                 </div>
               </div> -->
             </div>
+            <br>
           
       </section>
       <!--End of Menu Section-->
     
-    <section id="Reserve">
-        <h2 class="reserve-title">Reserve a Table</h2>
-        <div class="column">
-            <p>Reservation Form</p>
-            <div class="item">
-                <p>Name</p>
-                <div class="name-item">
-                  <input type="text" name="name" placeholder="First" />
-                  <input type="text" name="name" placeholder="Last" />
-                </div>
-              </div>
-    
-              <div class="item">
-                <p>Email</p>
-                <input type="email" name="email"/>
-              </div>
-    
-              <div class="item">
-                <p>Phone</p>
-                <input type="text" name="phone" placeholder="### ### ####"/>
-              </div>
-    
-              <div class="item">
-                <p>Reservation Date</p>
-                <input type="date" name="bdate" required/>
-                <i class="fas fa-calendar-alt"></i>
-              </div>
-    
-              <div class="item">
-                <p>Reservation Time</p>
-                <input type="time" name="btime" required/>
-              </div>
-    
-              <div class="item">
-                <p>How many people will you be with?</p>
-                <input type="text" name="language"/>
-              </div>
-    
-               <div class="item">
-                <p>Additional notes</p>
-                <textarea rows="3"></textarea>
-              </div>
-    
-               <div class="btn-block">
-                <button type="submit" href="/">Send</button>
-              </div>
-            </form>
-        </div>
-        <div class="column">
-            <div class="container">
-                <img class="reserve-image" src="https://i.postimg.cc/QxGY1xZp/igor-rand-wf-M1-Fi-k-Ma-Y-unsplash.jpg" alt="dining area">
+    <!--Reserve Table Section-->
+<section id="Reserve">
+  <h2 class="reserve-title">RESERVE A TABLE</h2>
+  <div class="booking-form-w3layouts">
+      <form action="#" method="post">
+         <h2 class="sub-heading-agileits">Reservation Form</h2>
+         <div clclearass="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <select class="form-control">
+                  <option>Western Cape</option>
+                  <option value="Lorem Ipsum">Gauteng</option>
+                  <option value="Adipiscing">Eastern Cape</option>
+               </select>
             </div>
-        </div>
-    </section>
-    <!--End of Reserve Table Section-->
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <select class="form-control">
+                  <option>Cape Town</option>
+                  <option value="Lorem Ipsum">Sandton</option>
+                  <option value="Adipiscing">Port alfred</option>
+               </select>
+            </div>
+         </div>
+         <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <select class="form-control">
+                  <option>Takeaway</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                 
+               </select>
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <select class="form-control">
+                  <option>Seat Down</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+               </select>
+            </div>
+         </div>
+         <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <input id="datepicker" name="Text" type="text" placeholder="Reservation Date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" class="hasDatepicker">
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <input type="text" id="timepicker" name="Time" class="timepicker form-control hasWickedpicker" placeholder="Reservation Time" value="" onkeypress="return false;">
+            </div>
+         </div>
+       
+         
+         <h3 class="sub-heading-agileits">Personal Details</h3>
+         <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <input type="text" name="Name" placeholder="Full Name" required="">
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <input type="text" name="Phone no" placeholder="Phone Number" required="">
+            </div>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text">
+            <input type="email" name="Email" placeholder="Email" required="">
+         </div>
+         <div class="clear"></div>
+         
+         <input type="submit" value="Submit">
+         <input type="reset" value="Clear Form">
+         <div class="clear"></div>
+      </form>
+   </div>
+</section>  
+<!--End of Reserve Table Section-->
     <!--Contact Section-->
-    <section id="Contact">
-        <h2 class="contact-title">Contact</h2>
+
+
+
+    <section id="contact">
+ 
+      <h1 class="title">CONTACT US</h1>
+           <h2 class="subtitle">We are here to assist you.</h2>
+    
+       <div class="contact">
+          
+           <br><br><br><br>
+       <div class="body-form">
+         <div class="contact-form">
+       <h2 class="subtitle">Type your query here.</h2>
+       <form id="contactForm" onsubmit="return validateForm()" action="https://formspree.io/f/xpzvwnez"
+       method="POST">
+                <input type="text" name="name" placeholder="Your Name" />
+                <input type="email" name="email" placeholder="Your E-mail Address" />
+                <textarea name="message" rows="8" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn-send">Get a Call Back</button>
+        </form>
+    
+     </div>
+     </div>
+    
+      <div class="address">
+         <h2>Ethos Restaurant <br>
+            Corner Eastwood and, <br>Parks Blvd, Rosebank, 2196</h2>
+      </div>
+     <div class="body-form">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.716528006627!2d28.04034477541312!3d-26.140784177115716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573f06b434189%3A0x4ee012ab17248e82!2sEthos%20Restaurant!5e0!3m2!1sen!2sza!4v1705534527176!5m2!1sen!2sza" width="450" height="400git " style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+   </div>
+        
+   </section>
+
+
+    
+    <!-- <section id="Contact">
+        <h2 class="contact-title menu-h1">Contact</h2>
         <div class="container">
-            <div class="column">
-                <p>This is our location.</p>
-            </div>
+           
         <div class="column">
-            <form action="">
+            <form class="border" action="">
                 <p> We are here to assist you</p>
                <div class="clearfix">
-               <input class="col2 first" type="text" placeholder="FirstName">
-               <input class="col2 last" type="text" placeholder="LastName">
+               <input class="col2 first m-4 " type="text" placeholder="FirstName">
+               <input class="col2 last m-4" type="text" placeholder="LastName">
                </div>
                
                <div class="clearfix">
-               <input  class="col2 first" type="Email" placeholder="Email">
-               <input class="col2 last" type="text" placeholder="Contact Number">
+               <input  class="col2 first m-4" type="Email" placeholder="Email">
+               <input class="col2 last m-4" type="text" placeholder="Contact Number">
                </div>
                
                <div class="clearfix">
-               <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+               <textarea class="m-4" name="textarea" id="" cols="55" rows="5">Your message here...</textarea>
                </div>
-                                           
-               <div class="clearfix"><input type="submit" value="Send">
-               </div>
+
+               <div>
+                <button type="button" class="mx-4 my-1 btn btn-primary btn-sm">Send</button>
+               </div>                            
+              
                </form>
         </div>
+        <div class="column">
+          <h4 class="text-center">This is our location.</h4>
+          <br><br>
+
+          <p class="text-center">97 Durham Ave, Salt River, Cape Town, 7925.</p>
+      </div>
 
         </div>
 
             
         </div>
-    </section>
+    </section> -->
     <!--End of Contact Table Section-->
     <footer class ="footer">
-      <div class="container">
-          <div class="row">
-              <div class="footer-col">
-                  <h4>company</h4>
-                  <ul>
-                      <li><a href="#About">about us</a></li>
-                      <li><a href="https://www.google.com/maps/@35.7041161,139.5576133,0a,41.1y,116.76h,80.49t/data=!3m4!1e1!3m2!1ss77urkl6YhTMpz0xaA1NYg!2e0?source=apiv3"> our address</a></li>
-                  </ul>
-              </div>
-              <div class="footer-col">
-                  <h4>get help</h4>
-                  <ul>
-                      <li><a href="#">FAQ's</a></li>   
-                      <li><a href="#">order methods</a></li>
-                      <li><a href="#">payment options</a></li>
-                  </ul>
-              </div>
-              <div class="footer-col">
-                  <h4>view online</h4>
-                  <ul>
-                      <h5>House favourites:</h5>
-                      <li><a href="https://www.youtube.com/watch?v=--r_50CF0AQ&pp=ygUZY291aWxsZXMgZGUgbW91dG9uIHJlY2lwZQ%3D%3D">Couilles de Mouton</a></li> 
-                      <li><a href="https://www.youtube.com/watch?v=_Bx9P32tdaM&pp=ygUYQm9ldWYgQm91cmd1aWdub24gcmVjaXBl">Boeuf Bourguignon</a></li>
-                      <li><a href="https://www.youtube.com/watch?v=XbO_qCNea3A&pp=ygUZQ2hvY29sYXRlIFNvdWZmbMOpIHJlY2lwZQ%3D%3D">Chocolate Soufflé</a></li>
-                      <li><a href="https://www.youtube.com/watch?v=3Kh2R8tULas&pp=ygUQZXNjYXJnb3QgcmVjaXBlcw%3D%3D">Escargot</a></li>  
-                  </ul>
-                  </div>
-                  <div class="footer-col">
-                  <h4>follow us</h4> 
-                  <div class="social-links">
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>  
-                    <a href="https://twitter.com/?lang=en-za"><i class="fab fa-twitter"></i></a>  
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>  
-                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>  
-                  </div>
-              </div>
-              </div>
-          </div>
-      
-      </div>    
+
+      <div class="containr">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#About">about us</a></li>
+                    <li><a href="https://www.google.com/maps/@35.7041161,139.5576133,0a,41.1y,116.76h,80.49t/data=!3m4!1e1!3m2!1ss77urkl6YhTMpz0xaA1NYg!2e0?source=apiv3"> our address</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ's</a></li>   
+                    <li><a href="#">order methods</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>view online</h4>
+                <ul>
+                    <h5>House favourites:</h5>
+                    <li><a href="https://www.youtube.com/watch?v=--r_50CF0AQ&pp=ygUZY291aWxsZXMgZGUgbW91dG9uIHJlY2lwZQ%3D%3D">Couilles de Mouton</a></li> 
+                    <li><a href="https://www.youtube.com/watch?v=_Bx9P32tdaM&pp=ygUYQm9ldWYgQm91cmd1aWdub24gcmVjaXBl">Boeuf Bourguignon</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=XbO_qCNea3A&pp=ygUZQ2hvY29sYXRlIFNvdWZmbMOpIHJlY2lwZQ%3D%3D">Chocolate Soufflé</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=3Kh2R8tULas&pp=ygUQZXNjYXJnb3QgcmVjaXBlcw%3D%3D">Escargot</a></li>  
+                </ul>
+                </div>
+                <div class="footer-col">
+                <h4>follow us</h4> 
+                <div class="social-links">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>  
+                  <a href="https://twitter.com/?lang=en-za"><i class="fab fa-twitter"></i></a>  
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>  
+                  <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>  
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    </div>    
+     
       </footer>
         <!-- bootstrap js  -->
 
