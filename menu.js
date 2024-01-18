@@ -57,19 +57,20 @@ let menuItems = JSON.parse(localStorage.getItem("menuItems"))
         document.querySelector("#menuItems").innerHTML=""; 
         menuItems.forEach((menuItem, i) => {
             document.querySelector("#menuItems").innerHTML += `
-            <div id="card-grid" class="col-3 align-items-center">
-            <div class="card"  style="width: 18rem;">
-            <img class="card-img-top" src=${menuItem.image} alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-dark"><em>${menuItem.name}</em></h5>
-              <p class="card-text text-dark">${menuItem.description}</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-success">${menuItem.ingredients}</small>
-              <large class="text-success">${menuItem.price}</large>
-            </div>
-          </div>
-             </div>
+<div class="grid">
+ <div class="card"  style="width: 18rem;">
+    <img class="card-img-top" src=${menuItem.image} alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title text-dark"><em>${menuItem.name}</em></h5>
+    <p class="card-text text-dark">${menuItem.description}</p>
+  </div>
+   <div class="card-footer">
+    <small class="text-success">${menuItem.ingredients}</small>
+    <large class="text-black">${menuItem.price}</large>
+   </div>
+  </div>
+ </div>
+</div>
           
           `;
         });
