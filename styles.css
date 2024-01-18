@@ -15,7 +15,8 @@
     --accent-color: #ABA194;
     --accent-green: #949D6A;
     --generic-black: #000;
-    --generic-white: #fff;
+    --generic-white: #fff       ;
+    
     --h1-size: 150px;
     --h2-size: 100px;
     --h3-size: 30px;
@@ -40,14 +41,7 @@ h6{
     font-family: 'Comfortaa', sans-serif;
     font-size: var(--h6-size);
 }
-    
-#About{
-    min-height: 100vh;
-}
-/*Mobile Responsiveness - Media Queries*/
-@media only screen and (max-width: 1200px){
-    /*Tablets [601px -> 1200px]*/
-}
+
 p{
     font-size:var(--p-size);
     font-family: 'Poppins', sans-serif;
@@ -55,6 +49,11 @@ p{
     justify-content: center;
 }
 /* Nav Styles */
+button{
+    border-radius: 15px;
+    border: none;
+    background-color: #ffffff00;
+}
 #darkicon{
     width: 25px;
     cursor: pointer;
@@ -65,42 +64,41 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     scroll-behavior: smooth;
+    position: fixed;
+    background-color: #00000070;
+    width: 100%;
 }
-
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 30px;
 }
 nav ul li a{
-    
+    color: white;
     text-decoration: none;
     font-size: 18px;
     position: relative;
-}
-nav ul li a:hover{
-    font-size: 24px;
-    transition: all 500ms;
+    font-size: 20px;
 }
 nav ul li a:active{
    color:#949D6A;
 }
-/* nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: brown;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+.topnav-right{
+    float: right;
+}
+.topnav-right a{
+    color: #fff;
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.79);
 
- }nav ul li a:hover::after{
-    width: 100%;
-} */
-
+}
+#darkMode{
+    color: #fff;
+}
 .light {
-    background-color: white;
+    background-color: rgba(178, 150, 122, 0.301);
     color: #000;
 }
 
@@ -115,6 +113,11 @@ nav ul li a:active{
  background-size: cover;
  background-attachment: fixed;
  color: var(--generic-white);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
 }
 .landing-title{
  font-family: 'Comfortaa', sans-serif;
@@ -123,7 +126,7 @@ nav ul li a:active{
  color: var(--generic-white);
  display: flex;
  justify-content: center;
- padding-top: 320px;
+ /*padding-top: 320px;*/
  /* text-shadow: 3px 3px 7px#000; */
 }
 .subtitle{
